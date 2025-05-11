@@ -497,7 +497,7 @@ body._lock {
 }
 @media (min-height: 700px) {
   .header__bottom-scroll {
-    margin: 0 0 120px;
+    margin: 0 0 110px;
   }
 }
 .header__bottom-scroll._active {
