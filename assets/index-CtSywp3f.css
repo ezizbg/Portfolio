@@ -490,14 +490,14 @@ body._lock {
   position: absolute;
   left: 50%;
   bottom: 0;
-  padding: 0 0 40px;
+  margin: 0 0 40px;
   transform: translateY(120%);
   opacity: 0;
   transition: all 0.8s ease;
 }
-@media (min-height: 600px) {
+@media (min-height: 700px) {
   .header__bottom-scroll {
-    padding: 0 0 100px;
+    margin: 0 0 100px;
   }
 }
 .header__bottom-scroll._active {
