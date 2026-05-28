@@ -1,0 +1,91 @@
+.about {
+  position: relative;
+  @include section-pad;
+
+  &__inner {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+
+    @include from-desktop { gap: 72px; }
+  }
+
+  &__eyebrow { color: $color-text-mute; }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 56px;
+    align-items: start;
+
+    @include from-desktop {
+      grid-template-columns: 5fr 7fr;
+      gap: 88px;
+    }
+  }
+
+  &__media {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    @include from-desktop {
+      position: sticky;
+      top: 120px;
+    }
+  }
+
+  &__media-frame {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    border-radius: $radius-lg;
+    border: 1px solid $color-border;
+    background: $color-surface;
+    will-change: transform;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(1.05);
+  }
+
+  &__media-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, transparent 50%, rgba(10, 10, 10, 0.5) 100%),
+      radial-gradient(circle at 70% 20%, rgba(255, 255, 255, 0.06), transparent 60%);
+    mix-blend-mode: normal;
+    pointer-events: none;
+  }
+
+  &__media-meta {
+    display: flex;
+    justify-content: space-between;
+    color: $color-text-mute;
+
+    &-role { color: $color-text-faint; }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__title { color: $color-text; }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 56ch;
+  }
+
+  &__paragraph { color: $color-text-soft; }
+}

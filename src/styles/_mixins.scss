@@ -1,0 +1,84 @@
+@use 'sass:math';
+@use 'variables' as *;
+
+// =========================================
+// Media query mixins — mobile-first
+// =========================================
+
+@mixin from-tablet {
+  @media (min-width: #{$bp-mobile + 1px}) { @content; }
+}
+
+@mixin from-desktop {
+  @media (min-width: #{$bp-tablet + 1px}) { @content; }
+}
+
+@mixin from-wide {
+  @media (min-width: #{$bp-desktop + 1px}) { @content; }
+}
+
+@mixin until-tablet {
+  @media (max-width: $bp-mobile) { @content; }
+}
+
+@mixin until-desktop {
+  @media (max-width: $bp-tablet) { @content; }
+}
+
+// =========================================
+// Layout helpers
+// =========================================
+
+@mixin container {
+  width: 100%;
+  max-width: $container-max;
+  margin-inline: auto;
+  padding-inline: $container-pad-m;
+
+  @include from-tablet { padding-inline: $container-pad-t; }
+  @include from-desktop { padding-inline: $container-pad-d; }
+}
+
+@mixin section-pad {
+  padding-block: 96px;
+
+  @include from-tablet { padding-block: 128px; }
+  @include from-desktop { padding-block: 160px; }
+}
+
+// =========================================
+// Fluid typography — modern Sass approach
+// =========================================
+// Uses math.div to get a dimensionless slope, avoids the deprecated / operator
+// and the unit-incompatibility in modern Sass.
+
+@mixin fluid($prop, $min-size, $max-size, $min-width: 360px, $max-width: 1440px) {
+  $slope: math.div($max-size - $min-size, $max-width - $min-width);
+  $slope-vw: $slope * 100;
+  $intercept: $min-size - $slope * $min-width;
+
+  #{$prop}: clamp(#{$min-size}, #{$intercept} + #{$slope-vw}vw, #{$max-size});
+}
+
+// =========================================
+// Effects
+// =========================================
+
+@mixin glass {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  border: 1px solid $color-border;
+}
+
+@mixin focus-ring {
+  &:focus-visible {
+    outline: 2px solid $color-text;
+    outline-offset: 4px;
+    border-radius: 4px;
+  }
+}
+
+@mixin reduced-motion {
+  @media (prefers-reduced-motion: reduce) { @content; }
+}

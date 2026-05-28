@@ -1,0 +1,15 @@
+.animated-text {
+  display: inline;
+
+  &__word {
+    display: inline-flex;
+    overflow: hidden;
+    line-height: inherit;
+    vertical-align: top;
+  }
+
+  &__inner {
+    display: inline-block;
+    will-change: transform;
+  }
+}

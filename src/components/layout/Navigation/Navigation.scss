@@ -1,0 +1,211 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $z-nav;
+  padding-block: 20px;
+  transition: padding $dur-base $ease-out, background $dur-base $ease-out, border-color $dur-base $ease-out;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 10, 0);
+    backdrop-filter: blur(0);
+    -webkit-backdrop-filter: blur(0);
+    transition: background $dur-base $ease-out, backdrop-filter $dur-base $ease-out;
+    border-bottom: 1px solid transparent;
+    transition-property: background, backdrop-filter, border-color;
+    z-index: -1;
+  }
+
+  &--scrolled {
+    padding-block: 14px;
+
+    &::before {
+      background: rgba(10, 10, 10, 0.72);
+      backdrop-filter: blur(22px) saturate(140%);
+      -webkit-backdrop-filter: blur(22px) saturate(140%);
+      border-bottom-color: $color-border;
+    }
+  }
+
+  &__inner {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  &__logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-family: $font-sans;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    @include focus-ring;
+  }
+
+  &__logo-mark {
+    display: inline-grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid $color-border-hi;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  &__logo-text { font-size: 15px; }
+
+  &__links {
+    display: none;
+    align-items: center;
+    gap: 36px;
+
+    @include from-desktop { display: inline-flex; }
+  }
+
+  &__link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    height: 28px;
+    overflow: hidden;
+    color: $color-text-soft;
+    font-size: 14px;
+    transition: color $dur-base $ease-out;
+
+    &-text {
+      display: inline-block;
+      transition: transform $dur-base $ease-expo;
+    }
+
+    &::after {
+      content: attr(data-shadow);
+      position: absolute;
+      top: 100%;
+      left: 0;
+      transition: transform $dur-base $ease-expo;
+    }
+
+    &:hover {
+      color: $color-text;
+
+      .nav__link-text { transform: translateY(-2px); }
+    }
+
+    @include focus-ring;
+  }
+
+  &__actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__cta {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    background: $color-text;
+    color: $color-bg;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    transition: transform $dur-base $ease-expo, background $dur-base $ease-out;
+
+    @include from-tablet { display: inline-flex; }
+
+    &:hover {
+      transform: translateY(-1px);
+      background: #fff;
+    }
+
+    &-arrow {
+      display: inline-block;
+      transition: transform $dur-base $ease-expo;
+    }
+
+    &:hover .nav__cta-arrow { transform: translateX(3px); }
+
+    @include focus-ring;
+  }
+
+  &__burger {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid $color-border;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.025);
+    transition: background $dur-base $ease-out, border-color $dur-base $ease-out;
+
+    @include from-desktop { display: none; }
+
+    span {
+      display: block;
+      width: 16px;
+      height: 1.5px;
+      margin-inline: auto;
+      background: $color-text;
+      transition: transform $dur-base $ease-expo, opacity $dur-base $ease-out;
+    }
+
+    &--open {
+      span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+      span:nth-child(2) { opacity: 0; }
+      span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    }
+  }
+
+  &__drawer {
+    overflow: hidden;
+    background: rgba(10, 10, 10, 0.96);
+    backdrop-filter: blur(22px);
+    border-bottom: 1px solid $color-border;
+
+    @include from-desktop { display: none; }
+
+    &-links {
+      @include container;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      padding-block: 24px 32px;
+    }
+
+    &-link {
+      padding-block: 14px;
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      color: $color-text;
+      border-bottom: 1px solid $color-border;
+
+      &:hover { color: $color-text; }
+    }
+
+    &-cta {
+      margin-top: 16px;
+      align-self: flex-start;
+      padding: 14px 22px;
+      border-radius: 999px;
+      background: $color-text;
+      color: $color-bg;
+      font-weight: 500;
+    }
+  }
+}

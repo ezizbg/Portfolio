@@ -1,0 +1,91 @@
+.experience {
+  position: relative;
+  @include section-pad;
+  border-top: 1px solid $color-border;
+
+  &__inner {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+
+    @include from-desktop { gap: 72px; }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 28ch;
+  }
+
+  &__eyebrow { color: $color-text-mute; }
+
+  &__title { color: $color-text; }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__item { list-style: none; }
+
+  &__card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 32px;
+    border: 1px solid $color-border;
+    border-radius: $radius-lg;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.005));
+    transition: border-color $dur-base $ease-out, transform $dur-base $ease-expo, background $dur-base $ease-out;
+
+    &:hover {
+      border-color: $color-border-hi;
+      transform: translateY(-2px);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.01));
+    }
+
+    @include from-desktop {
+      grid-template-columns: 240px 1fr;
+      gap: 56px;
+      padding: 40px 48px;
+    }
+  }
+
+  &__card-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__card-index {
+    font-family: $font-mono;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: $color-text-faint;
+  }
+
+  &__card-period { color: $color-text-soft; }
+
+  &__card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  &__card-company {
+    color: $color-text;
+    @include fluid(font-size, 28px, 40px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+
+  &__card-role { color: $color-text-mute; }
+
+  &__card-description {
+    max-width: 64ch;
+    color: $color-text-soft;
+  }
+}

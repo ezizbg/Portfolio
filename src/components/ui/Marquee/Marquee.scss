@@ -1,0 +1,51 @@
+.marquee {
+  --marquee-duration: 32s;
+
+  display: flex;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: visible;
+  padding-block: 8px;
+  user-select: none;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 12%,
+    #000 88%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 12%,
+    #000 88%,
+    transparent
+  );
+
+  &__track {
+    display: flex;
+    flex-shrink: 0;
+    width: max-content;
+    gap: 0;
+    animation: marquee-scroll var(--marquee-duration) linear infinite;
+
+    &--reverse { animation-direction: reverse; }
+  }
+
+  &__group {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 56px;
+    padding-right: 56px;
+  }
+
+  @keyframes marquee-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  @include reduced-motion {
+    &__track { animation: none; }
+  }
+}

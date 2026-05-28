@@ -1,0 +1,45 @@
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-cursor;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition: opacity $dur-base $ease-out;
+
+  &--visible { opacity: 1; }
+
+  &__dot {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: $color-text;
+    transition: transform $dur-base $ease-out, opacity $dur-base $ease-out;
+  }
+
+  &__ring {
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    transition: transform $dur-base $ease-expo, border-color $dur-base $ease-out;
+  }
+
+  &--hovered {
+    .cursor__dot { transform: scale(0); }
+    .cursor__ring {
+      transform: scale(1.6);
+      border-color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  @media (max-width: $bp-tablet) { display: none; }
+}

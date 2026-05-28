@@ -1,0 +1,124 @@
+.contacts {
+  position: relative;
+  @include section-pad;
+  border-top: 1px solid $color-border;
+  overflow: hidden;
+  isolation: isolate;
+
+  &__glow {
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    transform: translateX(-50%);
+    background: radial-gradient(
+      ellipse at center,
+      rgba(255, 255, 255, 0.06) 0%,
+      transparent 70%
+    );
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  &__inner {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__eyebrow { color: $color-text-mute; }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-family: $font-sans;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    color: $color-text;
+    @include fluid(font-size, 28px, 52px);
+    max-width: 22ch;
+  }
+
+  &__title-line {
+    display: block;
+    overflow: hidden;
+  }
+
+  &__title-inner {
+    display: inline-block;
+    will-change: transform;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border-radius: 999px;
+    border: 1px solid $color-border;
+    background: rgba(255, 255, 255, 0.02);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: $color-text-soft;
+    transition: border-color $dur-base $ease-out, color $dur-base $ease-out, transform $dur-base $ease-expo;
+
+    &:hover {
+      border-color: $color-border-hi;
+      color: $color-text;
+      transform: translateY(-2px);
+    }
+
+    @include focus-ring;
+  }
+
+  &__social-arrow {
+    font-size: 12px;
+    transition: transform $dur-base $ease-expo;
+  }
+  &__social-link:hover &__social-arrow { transform: translate(2px, -2px); }
+
+  &__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+    border-radius: 999px;
+    background: $color-text;
+    color: $color-bg;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    transition: transform $dur-base $ease-expo, background $dur-base $ease-out;
+
+    &:hover {
+      transform: translateY(-2px);
+      background: #fff;
+    }
+
+    @include focus-ring;
+  }
+
+  &__cta-arrow {
+    display: inline-block;
+    transition: transform $dur-base $ease-expo;
+  }
+  &__cta:hover &__cta-arrow { transform: translateX(4px); }
+}

@@ -1,0 +1,23 @@
+.footer {
+  border-top: 1px solid $color-border;
+  padding-block: 24px;
+
+  &__inner {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__name {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: $color-text-soft;
+  }
+
+  &__year {
+    color: $color-text-faint;
+    font-size: 12px;
+  }
+}

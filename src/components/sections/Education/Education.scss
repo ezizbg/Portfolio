@@ -1,0 +1,62 @@
+.education {
+  position: relative;
+  @include section-pad;
+  border-top: 1px solid $color-border;
+
+  &__inner {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+
+    @include from-desktop { gap: 72px; }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 28ch;
+  }
+
+  &__eyebrow { color: $color-text-mute; }
+  &__title { color: $color-text; }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid $color-border;
+  }
+
+  &__item { list-style: none; }
+
+  &__card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 32px;
+    padding-block: 32px;
+    border-bottom: 1px solid $color-border;
+
+    @include from-desktop {
+      grid-template-columns: 80px 1fr;
+      gap: 56px;
+      padding-block: 44px;
+    }
+  }
+
+  &__card-index { color: $color-text-faint; padding-top: 6px; }
+
+  &__card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__card-period { color: $color-text-mute; }
+  &__card-place { color: $color-text; }
+  &__card-description {
+    color: $color-text-soft;
+    max-width: 70ch;
+    margin-top: 6px;
+  }
+}
