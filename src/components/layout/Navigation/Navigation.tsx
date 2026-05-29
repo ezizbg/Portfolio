@@ -33,6 +33,7 @@ export function Navigation() {
     { href: "#experience", label: t.nav.experience },
     { href: "#skills", label: t.nav.skills },
     { href: "#work", label: t.nav.work },
+    { href: "#education", label: t.nav.education },
     { href: "#contacts", label: t.nav.contacts },
   ];
 

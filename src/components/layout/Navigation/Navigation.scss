@@ -112,25 +112,25 @@
   &__lang {
     display: inline-flex;
     align-items: center;
-    border: 1px solid $color-border;
-    border-radius: 999px;
-    overflow: hidden;
 
     &-btn {
-      padding: 6px 11px;
+      padding: 4px 9px;
       font-size: 12px;
       font-weight: 500;
-      letter-spacing: 0.04em;
-      color: $color-text-soft;
+      letter-spacing: 0.06em;
+      color: $color-text-faint;
       background: transparent;
-      transition: color $dur-base $ease-out, background $dur-base $ease-out;
       cursor: pointer;
+      transition: color $dur-base $ease-out;
 
-      &:hover { color: $color-text; }
+      &:hover { color: $color-text-soft; }
 
       &--active {
-        color: $color-bg;
-        background: $color-text;
+        color: $color-text;
+      }
+
+      & + & {
+        border-left: 1px solid $color-border;
       }
     }
   }

@@ -34,6 +34,7 @@ export interface Dictionary {
     experience: string;
     skills: string;
     work: string;
+    education: string;
     contacts: string;
     cta: string;
   };
@@ -64,6 +65,7 @@ export interface Dictionary {
   education: {
     eyebrow: string;
     title: string;
+    verifyLink: string;
     items: EducationItem[];
   };
   portfolio: {
@@ -94,6 +96,7 @@ export const translations: Record<Locale, Dictionary> = {
       experience: "Опыт",
       skills: "Навыки",
       work: "Работы",
+      education: "Образование",
       contacts: "Контакты",
       cta: "Связаться",
     },
@@ -129,14 +132,14 @@ export const translations: Record<Locale, Dictionary> = {
         {
           company: "ООО «Континенталь»",
           role: "Frontend-разработчик",
-          period: "Июнь 2025 — Сентябрь 2025",
+          period: "Июнь — Сент. 2025",
           description:
             "Разрабатывал и улучшал frontend-интерфейсы для web applications и digital products, включая коммерческие решения для АльфаСтрахование-ОМС. Работал над адаптивными интерфейсами, UI logic, API integrations, animations и interactive user flows. Взаимодействовал с backend-разработчиками и product-командой, участвуя в улучшении usability, scalability и общего пользовательского опыта современных web-платформ.",
         },
         {
           company: "Фриланс",
           role: "Frontend-разработчик",
-          period: "Апрель 2024 — Май 2025",
+          period: "Апр. 2024 — Май 2025",
           description:
             "Разрабатывал адаптивные веб-интерфейсы и frontend-решения для различных проектов и digital-продуктов. Реализовывал интерактивные UI-компоненты, анимации, пользовательские сценарии и адаптивные layouts с фокусом на usability и cross-device compatibility. Работал с современными frontend workflows, API integrations и улучшением пользовательского опыта.",
         },
@@ -150,31 +153,32 @@ export const translations: Record<Locale, Dictionary> = {
     education: {
       eyebrow: "04 — Образование",
       title: "Образование",
+      verifyLink: "Проверить →",
       items: [
-        {
-          place: "Российский университет дружбы народов · Магистратура",
-          period: "Сентябрь 2025 — настоящее время",
-          description:
-            "Факультет физико-математических и естественных наук, направление «Фундаментальная информатика и информационные технологии». 1 курс.",
-        },
-        {
-          place: "Российский университет дружбы народов · Бакалавриат",
-          period: "Сентябрь 2021 — Июнь 2025",
-          description:
-            "Факультет физико-математических и естественных наук, направление «Фундаментальная информатика и информационные технологии».",
-        },
-        {
-          place: "Курс по HTML, CSS, JavaScript",
-          period: "Январь 2024 — Март 2024",
-          description:
-            "Создание структуры веб-страниц на HTML, оформление с использованием CSS (SASS/SCSS) и методологии БЭМ, интерактивность с помощью JavaScript.",
-        },
         {
           place: "Building with the Claude API · Anthropic",
           period: "Май 2026",
           description:
             "Курс по разработке приложений с использованием Claude API: интеграция LLM, streaming-компоненты, диалоговые интерфейсы. Сертификат № 9sjcn3p55gmh.",
           link: "https://verify.skilljar.com/c/9sjcn3p55gmh",
+        },
+        {
+          place: "Российский университет дружбы народов · Магистратура",
+          period: "Сент. 2025 — н.в.",
+          description:
+            "Факультет физико-математических и естественных наук, направление «Фундаментальная информатика и информационные технологии». 1 курс.",
+        },
+        {
+          place: "Российский университет дружбы народов · Бакалавриат",
+          period: "Сент. 2021 — Июнь 2025",
+          description:
+            "Факультет физико-математических и естественных наук, направление «Фундаментальная информатика и информационные технологии».",
+        },
+        {
+          place: "Курс по HTML, CSS, JavaScript",
+          period: "Янв. — март 2024",
+          description:
+            "Создание структуры веб-страниц на HTML, оформление с использованием CSS (SASS/SCSS) и методологии БЭМ, интерактивность с помощью JavaScript.",
         },
       ],
     },
@@ -243,6 +247,7 @@ export const translations: Record<Locale, Dictionary> = {
       experience: "Experience",
       skills: "Skills",
       work: "Work",
+      education: "Education",
       contacts: "Contacts",
       cta: "Get in touch",
     },
@@ -278,14 +283,14 @@ export const translations: Record<Locale, Dictionary> = {
         {
           company: 'LLC "Continental"',
           role: "Frontend Developer",
-          period: "June 2025 — September 2025",
+          period: "June — Sept. 2025",
           description:
             "Developed and improved frontend interfaces for web applications and digital products, including commercial solutions for Alfa Insurance (OMS). Worked on responsive interfaces, UI logic, API integrations, animations and interactive user flows. Collaborated with backend developers and product teams to improve usability, scalability and overall UX across modern web platforms.",
         },
         {
           company: "Freelance",
           role: "Frontend Developer",
-          period: "April 2024 — May 2025",
+          period: "Apr. 2024 — May 2025",
           description:
             "Developed responsive web interfaces and frontend solutions for various projects and digital products. Built interactive UI components, animations, user flows and adaptive layouts focused on usability and cross-device compatibility. Worked with modern frontend workflows, API integrations and UX improvements.",
         },
@@ -299,31 +304,32 @@ export const translations: Record<Locale, Dictionary> = {
     education: {
       eyebrow: "04 — Education",
       title: "Education",
+      verifyLink: "Verify →",
       items: [
-        {
-          place: "RUDN University · Master's degree",
-          period: "September 2025 — present",
-          description:
-            "Faculty of Physical, Mathematical and Natural Sciences. Fundamental Informatics and Information Technologies. 1st year.",
-        },
-        {
-          place: "RUDN University · Bachelor's degree",
-          period: "September 2021 — June 2025",
-          description:
-            "Faculty of Physical, Mathematical and Natural Sciences. Fundamental Informatics and Information Technologies.",
-        },
-        {
-          place: "HTML, CSS, JavaScript Course",
-          period: "January 2024 — March 2024",
-          description:
-            "Structuring web pages with HTML, styling with CSS (SASS/SCSS) and BEM methodology, building interactivity with JavaScript.",
-        },
         {
           place: "Building with the Claude API · Anthropic",
           period: "May 2026",
           description:
             "Course on building applications with Claude API: LLM integration, streaming components, conversational interfaces. Certificate No. 9sjcn3p55gmh.",
           link: "https://verify.skilljar.com/c/9sjcn3p55gmh",
+        },
+        {
+          place: "RUDN University · Master's degree",
+          period: "Sept. 2025 — present",
+          description:
+            "Faculty of Physical, Mathematical and Natural Sciences. Fundamental Informatics and Information Technologies. 1st year.",
+        },
+        {
+          place: "RUDN University · Bachelor's degree",
+          period: "Sept. 2021 — June 2025",
+          description:
+            "Faculty of Physical, Mathematical and Natural Sciences. Fundamental Informatics and Information Technologies.",
+        },
+        {
+          place: "HTML, CSS, JavaScript Course",
+          period: "Jan. — Mar. 2024",
+          description:
+            "Structuring web pages with HTML, styling with CSS (SASS/SCSS) and BEM methodology, building interactivity with JavaScript.",
         },
       ],
     },

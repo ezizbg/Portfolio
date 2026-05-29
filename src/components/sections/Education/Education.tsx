@@ -29,7 +29,7 @@ export function Education() {
                         rel="noopener noreferrer"
                         className="education__card-link t-mono"
                       >
-                        Verify →
+                        {t.education.verifyLink}
                       </a>
                     )}
                   </div>
