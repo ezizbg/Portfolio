@@ -13,6 +13,7 @@ export interface EducationItem {
   place: string;
   period: string;
   description: string;
+  link?: string;
 }
 
 export interface ProjectItem {
@@ -168,6 +169,13 @@ export const translations: Record<Locale, Dictionary> = {
           description:
             "Создание структуры веб-страниц на HTML, оформление с использованием CSS (SASS/SCSS) и методологии БЭМ, интерактивность с помощью JavaScript.",
         },
+        {
+          place: "Building with the Claude API · Anthropic",
+          period: "Май 2026",
+          description:
+            "Курс по разработке приложений с использованием Claude API: интеграция LLM, streaming-компоненты, диалоговые интерфейсы. Сертификат № 9sjcn3p55gmh.",
+          link: "https://verify.skilljar.com/c/9sjcn3p55gmh",
+        },
       ],
     },
     portfolio: {
@@ -309,6 +317,13 @@ export const translations: Record<Locale, Dictionary> = {
           period: "January 2024 — March 2024",
           description:
             "Structuring web pages with HTML, styling with CSS (SASS/SCSS) and BEM methodology, building interactivity with JavaScript.",
+        },
+        {
+          place: "Building with the Claude API · Anthropic",
+          period: "May 2026",
+          description:
+            "Course on building applications with Claude API: LLM integration, streaming components, conversational interfaces. Certificate No. 9sjcn3p55gmh.",
+          link: "https://verify.skilljar.com/c/9sjcn3p55gmh",
         },
       ],
     },

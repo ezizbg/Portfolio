@@ -109,6 +109,32 @@
     gap: 12px;
   }
 
+  &__lang {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid $color-border;
+    border-radius: 999px;
+    overflow: hidden;
+
+    &-btn {
+      padding: 6px 11px;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: $color-text-soft;
+      background: transparent;
+      transition: color $dur-base $ease-out, background $dur-base $ease-out;
+      cursor: pointer;
+
+      &:hover { color: $color-text; }
+
+      &--active {
+        color: $color-bg;
+        background: $color-text;
+      }
+    }
+  }
+
   &__cta {
     display: none;
     align-items: center;

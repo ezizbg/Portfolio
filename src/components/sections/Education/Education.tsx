@@ -22,6 +22,16 @@ export function Education() {
                     <p className="education__card-period t-mono">{item.period}</p>
                     <h3 className="education__card-place t-h3">{item.place}</h3>
                     <p className="education__card-description t-body">{item.description}</p>
+                    {item.link && (
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="education__card-link t-mono"
+                      >
+                        Verify →
+                      </a>
+                    )}
                   </div>
                 </article>
               </Reveal>

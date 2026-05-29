@@ -2,12 +2,13 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 import { useLanguage } from "@/i18n/LanguageContext";
+import { LOCALES, type Locale } from "@/i18n/translations";
 import "./Navigation.scss";
 
 const SCROLL_THRESHOLD = 40;
 
 export function Navigation() {
-  const { t } = useLanguage();
+  const { t, locale, setLocale } = useLanguage();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -66,6 +67,18 @@ export function Navigation() {
         </nav>
 
         <div className="nav__actions">
+          <div className="nav__lang" role="group" aria-label="Language">
+            {LOCALES.map((l: Locale) => (
+              <button
+                key={l}
+                type="button"
+                className={["nav__lang-btn", l === locale ? "nav__lang-btn--active" : ""].filter(Boolean).join(" ")}
+                onClick={() => setLocale(l)}
+              >
+                {l.toUpperCase()}
+              </button>
+            ))}
+          </div>
           <a className="nav__cta" href="#contacts">
             <span>{t.nav.cta}</span>
             <span className="nav__cta-arrow" aria-hidden="true">
