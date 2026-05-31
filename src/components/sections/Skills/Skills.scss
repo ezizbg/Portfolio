@@ -111,6 +111,14 @@
 
   &__card:hover &__card-name { color: $color-text; }
 
+  &__also {
+    font-family: $font-sans;
+    font-size: 13px;
+    font-weight: 500;
+    color: $color-text-mute;
+    line-height: 1.6;
+  }
+
   // Marquee
   &__marquee {
     margin-inline: calc(-1 * $container-pad-m);

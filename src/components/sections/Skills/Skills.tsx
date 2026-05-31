@@ -33,6 +33,8 @@ export function Skills() {
           ))}
         </div>
 
+        <p className="skills__also">{t.skills.also}</p>
+
         <div className="skills__marquee">
           <Marquee speed={36}>
             {SKILLS.concat(SKILLS).map((skill, idx) => (

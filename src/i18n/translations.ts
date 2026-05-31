@@ -61,6 +61,7 @@ export interface Dictionary {
     eyebrow: string;
     title: string;
     note: string;
+    also: string;
   };
   education: {
     eyebrow: string;
@@ -104,7 +105,7 @@ export const translations: Record<Locale, Dictionary> = {
       eyebrow: "Frontend Developer · 2026",
       title: ["Создаю", "интерфейсы"],
       subtitle:
-        "Разрабатываю web-приложения, масштабируемые интерфейсы и digital-продукты с фокусом на качество исполнения и пользовательский опыт.",
+        "Создаю современные веб-приложения, масштабируемые интерфейсы и AI-продукты с фокусом на качество исполнения и пользовательский опыт.",
       scroll: "Прокрутить",
       statsLabels: {
         years: "Лет в разработке",
@@ -119,9 +120,9 @@ export const translations: Record<Locale, Dictionary> = {
       eyebrow: "01 — Обо мне",
       title: "Frontend-разработчик, который думает как product-инженер.",
       body: [
-        "Frontend-разработчик с коммерческим опытом создания адаптивных интерфейсов для веб-приложений и digital-продуктов.",
+        "Frontend-разработчик с коммерческим опытом создания адаптивных интерфейсов для веб-приложений и digital-продуктов. Реализую production-ready решения для корпоративных клиентов.",
         "Разрабатываю корпоративные интерфейсы, пользовательские сервисы, лендинги, admin-панели и интерактивные UI-компоненты.",
-        "Подключал LLM-сервисы напрямую: OpenAI API, Anthropic API, Claude SDK, реализовывал streaming-компоненты и диалоговые интерфейсы. Участвовал в командных product-процессах, умею взаимодействовать с backend-разработчиком и дизайнером.",
+        "Подключал LLM-сервисы напрямую: OpenAI API, Anthropic API, Claude SDK — реализовывал streaming-компоненты и диалоговые интерфейсы. Участвовал в командных product-процессах, умею взаимодействовать с backend-разработчиком и дизайнером.",
       ],
       imageAlt: "Портрет Эзиза Бердыева",
     },
@@ -134,14 +135,14 @@ export const translations: Record<Locale, Dictionary> = {
           role: "Frontend-разработчик",
           period: "Июнь — Сент. 2025",
           description:
-            "Разрабатывал и улучшал frontend-интерфейсы для web applications и digital products, включая коммерческие решения для АльфаСтрахование-ОМС. Работал над адаптивными интерфейсами, UI logic, API integrations, animations и interactive user flows. Взаимодействовал с backend-разработчиками и product-командой, участвуя в улучшении usability, scalability и общего пользовательского опыта современных web-платформ.",
+            "Разрабатывал и улучшал frontend-интерфейсы для веб-приложений и digital-продуктов, включая коммерческие решения для АльфаСтрахование-ОМС. Работал над адаптивными интерфейсами, UI-логикой, REST API интеграциями, анимациями и интерактивными пользовательскими сценариями. Взаимодействовал с backend-разработчиками и product-командой для улучшения usability, scalability и пользовательского опыта.",
         },
         {
           company: "Фриланс",
           role: "Frontend-разработчик",
           period: "Апр. 2024 — Май 2025",
           description:
-            "Разрабатывал адаптивные веб-интерфейсы и frontend-решения для различных проектов и digital-продуктов. Реализовывал интерактивные UI-компоненты, анимации, пользовательские сценарии и адаптивные layouts с фокусом на usability и cross-device compatibility. Работал с современными frontend workflows, API integrations и улучшением пользовательского опыта.",
+            "Разрабатывал адаптивные веб-интерфейсы и frontend-решения для различных digital-продуктов и корпоративных клиентов. Реализовывал интерактивные UI-компоненты, анимации, пользовательские сценарии и адаптивные layouts с использованием SCSS, методологии BEM и REST API интеграций. Фокус на usability, cross-device compatibility и production-ready результат.",
         },
       ],
     },
@@ -149,6 +150,7 @@ export const translations: Record<Locale, Dictionary> = {
       eyebrow: "03 — Стек",
       title: "Технологии, с которыми я работаю",
       note: "Инструменты ежедневного использования",
+      also: "Также работаю с: REST API · React Query · React Router · Next.js · Zustand · Telegram Mini Apps · OpenAI API · Anthropic API · Claude SDK · CI/CD",
     },
     education: {
       eyebrow: "04 — Образование",
@@ -228,7 +230,7 @@ export const translations: Record<Locale, Dictionary> = {
     },
     contacts: {
       eyebrow: "06 — Контакты",
-      title: "Открыт к современным проектам и профессиональным возможностям.",
+      title: "Открыт к полной занятости и фриланс-проектам. Доступен для удалённой работы.",
       lead: "Открыт к интересным проектам, фриланс-задачам и full-time возможностям. Напишите — обсудим.",
       emailLabel: "Почта",
       socialsLabel: "Социальные сети",
@@ -255,7 +257,7 @@ export const translations: Record<Locale, Dictionary> = {
       eyebrow: "Frontend Developer · 2026",
       title: ["Crafting", "interfaces"],
       subtitle:
-        "Building modern web applications, scalable interfaces and digital products with a focus on execution quality and user experience.",
+        "Building modern web applications, scalable interfaces and AI-powered digital products with a focus on execution quality and user experience.",
       scroll: "Scroll",
       statsLabels: {
         years: "Years coding",
@@ -270,9 +272,9 @@ export const translations: Record<Locale, Dictionary> = {
       eyebrow: "01 — About",
       title: "Frontend developer who thinks like a product engineer.",
       body: [
-        "Frontend developer with commercial experience creating responsive interfaces for web applications and digital products.",
+        "Frontend developer with commercial experience creating responsive interfaces for web applications and digital products. Delivering production-ready solutions for corporate clients.",
         "Building corporate interfaces, custom services, landing pages, admin panels and interactive UI components.",
-        "Directly integrated LLM services: OpenAI API, Anthropic API, Claude SDK, implemented streaming components and conversational interfaces. Participated in team product processes, able to collaborate with backend developers and designers.",
+        "Directly integrated LLM services: OpenAI API, Anthropic API, Claude SDK — implemented streaming components and conversational interfaces. Participated in team product processes, able to collaborate with backend developers and designers.",
       ],
       imageAlt: "Portrait of Eziz Berdiyev",
     },
@@ -285,14 +287,14 @@ export const translations: Record<Locale, Dictionary> = {
           role: "Frontend Developer",
           period: "June — Sept. 2025",
           description:
-            "Developed and improved frontend interfaces for web applications and digital products, including commercial solutions for Alfa Insurance (OMS). Worked on responsive interfaces, UI logic, API integrations, animations and interactive user flows. Collaborated with backend developers and product teams to improve usability, scalability and overall UX across modern web platforms.",
+            "Developed and improved frontend interfaces for web applications and digital products, including commercial solutions for Alfa Insurance (OMS). Worked on responsive interfaces, UI logic, REST API integrations, animations and interactive user flows. Collaborated with backend developers and product teams to improve usability, scalability and overall UX across modern web platforms.",
         },
         {
           company: "Freelance",
           role: "Frontend Developer",
           period: "Apr. 2024 — May 2025",
           description:
-            "Developed responsive web interfaces and frontend solutions for various projects and digital products. Built interactive UI components, animations, user flows and adaptive layouts focused on usability and cross-device compatibility. Worked with modern frontend workflows, API integrations and UX improvements.",
+            "Built responsive web interfaces and frontend solutions for various digital products and corporate clients. Developed interactive UI components, animations, user flows and adaptive layouts using SCSS, BEM methodology and REST API integrations. Focused on usability, cross-device compatibility and production-ready delivery.",
         },
       ],
     },
@@ -300,6 +302,7 @@ export const translations: Record<Locale, Dictionary> = {
       eyebrow: "03 — Stack",
       title: "Technologies I work with",
       note: "Tools used daily",
+      also: "Also working with: REST API · React Query · React Router · Next.js · Zustand · Telegram Mini Apps · OpenAI API · Anthropic API · Claude SDK · CI/CD",
     },
     education: {
       eyebrow: "04 — Education",
@@ -378,7 +381,7 @@ export const translations: Record<Locale, Dictionary> = {
     },
     contacts: {
       eyebrow: "06 — Contacts",
-      title: "Open to modern projects and professional opportunities.",
+      title: "Open to full-time roles and freelance projects worldwide. Available for remote work.",
       lead: "Open to interesting projects, freelance work and full-time opportunities. Drop a line — let's talk.",
       emailLabel: "Email",
       socialsLabel: "Socials",
