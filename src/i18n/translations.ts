@@ -150,7 +150,7 @@ export const translations: Record<Locale, Dictionary> = {
       eyebrow: "03 — Стек",
       title: "Технологии, с которыми я работаю",
       note: "Инструменты ежедневного использования",
-      also: "Также работаю с: REST API · React Query · React Router · Next.js · Zustand · Telegram Mini Apps · OpenAI API · Anthropic API · Claude SDK · CI/CD",
+      also: "Также работаю с: REST API · Axios · React Query · React Router · Next.js · Zustand · Telegram Mini Apps · OpenAI API · Anthropic API · Claude SDK · CI/CD",
     },
     education: {
       eyebrow: "04 — Образование",
@@ -302,7 +302,7 @@ export const translations: Record<Locale, Dictionary> = {
       eyebrow: "03 — Stack",
       title: "Technologies I work with",
       note: "Tools used daily",
-      also: "Also working with: REST API · React Query · React Router · Next.js · Zustand · Telegram Mini Apps · OpenAI API · Anthropic API · Claude SDK · CI/CD",
+      also: "Also working with: REST API · Axios · React Query · React Router · Next.js · Zustand · Telegram Mini Apps · OpenAI API · Anthropic API · Claude SDK · CI/CD",
     },
     education: {
       eyebrow: "04 — Education",
