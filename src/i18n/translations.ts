@@ -120,9 +120,7 @@ export const translations: Record<Locale, Dictionary> = {
       eyebrow: "01 — Обо мне",
       title: "Frontend-разработчик, который думает как product-инженер.",
       body: [
-        "Frontend-разработчик с коммерческим опытом создания адаптивных интерфейсов для веб-приложений и digital-продуктов. Реализую production-ready решения для корпоративных клиентов.",
-        "Разрабатываю корпоративные интерфейсы, пользовательские сервисы, лендинги, admin-панели и интерактивные UI-компоненты.",
-        "Подключал LLM-сервисы напрямую: OpenAI API, Anthropic API, Claude SDK — реализовывал streaming-компоненты и диалоговые интерфейсы. Участвовал в командных product-процессах, умею взаимодействовать с backend-разработчиком и дизайнером.",
+        "Frontend-разработчик с коммерческим опытом разработки веб-приложений, адаптивных интерфейсов и production-ready digital-продуктов. Специализируюсь на интеграции LLM-сервисов: OpenAI API, Anthropic API, Claude SDK — streaming-компоненты, chatbot UI, диалоговые интерфейсы. Сертифицирован Anthropic. Работаю в связке с backend-командой и дизайнером, участвую в product-процессах от макета до релиза.",
       ],
       imageAlt: "Портрет Эзиза Бердыева",
     },
@@ -138,7 +136,7 @@ export const translations: Record<Locale, Dictionary> = {
             "Разрабатывал и улучшал frontend-интерфейсы для веб-приложений и digital-продуктов, включая коммерческие решения для АльфаСтрахование-ОМС. Работал над адаптивными интерфейсами, UI-логикой, REST API интеграциями, анимациями и интерактивными пользовательскими сценариями. Взаимодействовал с backend-разработчиками и product-командой для улучшения usability, scalability и пользовательского опыта.",
         },
         {
-          company: "Фриланс",
+          company: "Контрактная разработка",
           role: "Frontend-разработчик",
           period: "Апр. 2024 — Май 2025",
           description:
@@ -150,7 +148,7 @@ export const translations: Record<Locale, Dictionary> = {
       eyebrow: "03 — Стек",
       title: "Технологии, с которыми я работаю",
       note: "Инструменты ежедневного использования",
-      also: "Также работаю с: REST API · Axios · React Query · React Router · Next.js · Zustand · OpenAI API · Anthropic API · Claude SDK · CI/CD",
+      also: "Также работаю с: REST API · Axios · React Query · React Router · Next.js · Zustand · Tailwind CSS · OpenAI API · Anthropic API · Claude SDK · CI/CD",
     },
     education: {
       eyebrow: "04 — Образование",
@@ -272,9 +270,7 @@ export const translations: Record<Locale, Dictionary> = {
       eyebrow: "01 — About",
       title: "Frontend developer who thinks like a product engineer.",
       body: [
-        "Frontend developer with commercial experience creating responsive interfaces for web applications and digital products. Delivering production-ready solutions for corporate clients.",
-        "Building corporate interfaces, custom services, landing pages, admin panels and interactive UI components.",
-        "Directly integrated LLM services: OpenAI API, Anthropic API, Claude SDK — implemented streaming components and conversational interfaces. Participated in team product processes, able to collaborate with backend developers and designers.",
+        "Frontend developer with commercial experience building web applications, responsive interfaces and production-ready digital products. Specialized in LLM integration: OpenAI API, Anthropic API, Claude SDK — streaming components, chatbot UI, conversational interfaces. Anthropic certified. Collaborating with backend teams and designers, involved in product processes from design to release.",
       ],
       imageAlt: "Portrait of Eziz Berdiyev",
     },
@@ -290,7 +286,7 @@ export const translations: Record<Locale, Dictionary> = {
             "Developed and improved frontend interfaces for web applications and digital products, including commercial solutions for Alfa Insurance (OMS). Worked on responsive interfaces, UI logic, REST API integrations, animations and interactive user flows. Collaborated with backend developers and product teams to improve usability, scalability and overall UX across modern web platforms.",
         },
         {
-          company: "Freelance",
+          company: "Contract Development",
           role: "Frontend Developer",
           period: "Apr. 2024 — May 2025",
           description:
@@ -302,7 +298,7 @@ export const translations: Record<Locale, Dictionary> = {
       eyebrow: "03 — Stack",
       title: "Technologies I work with",
       note: "Tools used daily",
-      also: "Also working with: REST API · Axios · React Query · React Router · Next.js · Zustand · OpenAI API · Anthropic API · Claude SDK · CI/CD",
+      also: "Also working with: REST API · Axios · React Query · React Router · Next.js · Zustand · Tailwind CSS · OpenAI API · Anthropic API · Claude SDK · CI/CD",
     },
     education: {
       eyebrow: "04 — Education",
