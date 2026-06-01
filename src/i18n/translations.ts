@@ -120,7 +120,7 @@ export const translations: Record<Locale, Dictionary> = {
       eyebrow: "01 — Обо мне",
       title: "Frontend-разработчик, который думает как product-инженер.",
       body: [
-        "Frontend-разработчик с коммерческим опытом разработки веб-приложений, адаптивных интерфейсов и production-ready digital-продуктов. Специализируюсь на интеграции LLM-сервисов: OpenAI API, Anthropic API, Claude SDK — streaming-компоненты, chatbot UI, диалоговые интерфейсы. Сертифицирован Anthropic. Работаю в связке с backend-командой и дизайнером, участвую в product-процессах от макета до релиза.",
+        "Frontend-разработчик с коммерческим опытом разработки веб-приложений, адаптивных интерфейсов и production-ready digital-продуктов. Специализируюсь на интеграции LLM-сервисов: OpenAI API, Anthropic API, Claude SDK — streaming-компоненты, chatbot UI, диалоговые интерфейсы. Сертифицирован Anthropic. Самостоятельно реализую задачи от макета до production, эффективно взаимодействую с backend-разработчиками и дизайнерами в команде.",
       ],
       imageAlt: "Портрет Эзиза Бердыева",
     },
@@ -270,7 +270,7 @@ export const translations: Record<Locale, Dictionary> = {
       eyebrow: "01 — About",
       title: "Frontend developer who thinks like a product engineer.",
       body: [
-        "Frontend developer with commercial experience building web applications, responsive interfaces and production-ready digital products. Specialized in LLM integration: OpenAI API, Anthropic API, Claude SDK — streaming components, chatbot UI, conversational interfaces. Anthropic certified. Collaborating with backend teams and designers, involved in product processes from design to release.",
+        "Frontend developer with commercial experience building web applications, responsive interfaces and production-ready digital products. Specialized in LLM integration: OpenAI API, Anthropic API, Claude SDK — streaming components, chatbot UI, conversational interfaces. Anthropic certified. Independently delivering tasks from design to production, collaborating effectively with backend developers and designers.",
       ],
       imageAlt: "Portrait of Eziz Berdiyev",
     },
