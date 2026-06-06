@@ -7,13 +7,40 @@ import type { ProjectItem } from '@/i18n/translations';
 import './Portfolio.scss';
 
 // Aesthetic visual fingerprint per project — kept inline to stay framework-free.
-const PROJECT_VISUALS: Array<{ accent: string; pattern: 'rings' | 'dots' | 'stack' }> = [
+const PROJECT_VISUALS: Array<{ accent: string; pattern: 'rings' | 'dots' | 'stack' | 'bars' }> = [
   { accent: '#ff5a4f', pattern: 'rings' },
   { accent: '#6ad6ff', pattern: 'dots' },
   { accent: '#b6f24c', pattern: 'stack' },
+  { accent: '#c084fc', pattern: 'bars' },
 ];
 
 function ProjectVisual({ pattern, accent }: { pattern: string; accent: string }) {
+  if (pattern === 'bars') {
+    const heights = [160, 280, 120, 320, 200, 100];
+    return (
+      <svg viewBox="0 0 400 500" className="portfolio__visual-svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="bars-g" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stopColor={accent} stopOpacity="0.28" />
+            <stop offset="100%" stopColor="#000" stopOpacity="0" />
+          </linearGradient>
+        </defs>
+        <rect width="400" height="500" fill="url(#bars-g)" />
+        {heights.map((h, i) => (
+          <rect
+            key={i}
+            x={42 + i * 54}
+            y={400 - h}
+            width={34}
+            height={h}
+            rx={8}
+            fill={accent}
+            opacity={0.12 + i * 0.05}
+          />
+        ))}
+      </svg>
+    );
+  }
   if (pattern === 'rings') {
     return (
       <svg viewBox="0 0 400 500" className="portfolio__visual-svg" aria-hidden="true">

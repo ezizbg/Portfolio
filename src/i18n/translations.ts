@@ -215,10 +215,13 @@ export const translations: Record<Locale, Dictionary> = {
         {
           index: "03",
           title: "Offerify — AI Career Tools",
-          description: "",
-          meta: "Next.js 14, TypeScript, Anthropic API, Claude SDK, SCSS Modules, Vercel · задеплоен в production",
+          description:
+            "SaaS-приложение с тремя AI-инструментами для карьерного развития, задеплоенное в production.",
           bullets: [
-            "SaaS-приложение с тремя AI-инструментами: генератор сопроводительных писем, ATS-анализатор резюме, конструктор вакансий. Streaming через нативный ReadableStream, server-side изоляция API-ключа, PDF upload.",
+            "Генератор сопроводительных писем на базе Claude SDK",
+            "ATS-анализатор резюме с поддержкой PDF upload",
+            "Конструктор описаний вакансий с AI",
+            "Streaming через ReadableStream, server-side изоляция API-ключа",
           ],
           link: "https://offerify-seven.vercel.app",
         },
@@ -375,10 +378,13 @@ export const translations: Record<Locale, Dictionary> = {
         {
           index: "03",
           title: "Offerify — AI Career Tools",
-          description: "",
-          meta: "Next.js 14, TypeScript, Anthropic API, Claude SDK, SCSS Modules, Vercel · deployed to production",
+          description:
+            "SaaS app with three AI-powered career tools, deployed to production.",
           bullets: [
-            "SaaS app with three AI tools: cover letter generator, ATS resume analyzer, job description writer. Streaming via native ReadableStream, server-side API key isolation, PDF upload.",
+            "Cover letter generator powered by Claude SDK",
+            "ATS resume analyzer with PDF upload support",
+            "Job description writer with AI",
+            "Streaming via ReadableStream, server-side API key isolation",
           ],
           link: "https://offerify-seven.vercel.app",
         },
