@@ -101,7 +101,12 @@ function ProjectCard({ project, idx, viewProject }: { project: ProjectItem; idx:
         </div>
 
         <h3 className="portfolio__name t-h2">{project.title}</h3>
-        <p className="portfolio__desc t-body">{project.description}</p>
+        {project.meta && (
+          <p className="portfolio__meta t-body"><em>{project.meta}</em></p>
+        )}
+        {project.description && (
+          <p className="portfolio__desc t-body">{project.description}</p>
+        )}
 
         <ul className="portfolio__bullets">
           {project.bullets.map((bullet) => (

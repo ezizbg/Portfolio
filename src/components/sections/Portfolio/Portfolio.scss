@@ -104,6 +104,12 @@
     letter-spacing: -0.02em;
   }
 
+  &__meta {
+    max-width: 50ch;
+    color: $color-text-mute;
+    font-size: 13px;
+  }
+
   &__desc {
     max-width: 50ch;
     color: $color-text-soft;

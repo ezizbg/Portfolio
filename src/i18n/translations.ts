@@ -20,6 +20,7 @@ export interface ProjectItem {
   index: string;
   title: string;
   description: string;
+  meta?: string;
   bullets: string[];
   link: string;
 }
@@ -213,6 +214,16 @@ export const translations: Record<Locale, Dictionary> = {
         },
         {
           index: "03",
+          title: "Offerify — AI Career Tools",
+          description: "",
+          meta: "Next.js 14, TypeScript, Anthropic API, Claude SDK, SCSS Modules, Vercel · задеплоен в production",
+          bullets: [
+            "SaaS-приложение с тремя AI-инструментами: генератор сопроводительных писем, ATS-анализатор резюме, конструктор вакансий. Streaming через нативный ReadableStream, server-side изоляция API-ключа, PDF upload.",
+          ],
+          link: "https://offerify-seven.vercel.app",
+        },
+        {
+          index: "04",
           title: "React Admin Dashboard",
           description:
             "Веб-приложение с архитектурой, приближенной к production.",
@@ -363,6 +374,16 @@ export const translations: Record<Locale, Dictionary> = {
         },
         {
           index: "03",
+          title: "Offerify — AI Career Tools",
+          description: "",
+          meta: "Next.js 14, TypeScript, Anthropic API, Claude SDK, SCSS Modules, Vercel · deployed to production",
+          bullets: [
+            "SaaS app with three AI tools: cover letter generator, ATS resume analyzer, job description writer. Streaming via native ReadableStream, server-side API key isolation, PDF upload.",
+          ],
+          link: "https://offerify-seven.vercel.app",
+        },
+        {
+          index: "04",
           title: "React Admin Dashboard",
           description: "A web app with a near-production architecture.",
           bullets: [
