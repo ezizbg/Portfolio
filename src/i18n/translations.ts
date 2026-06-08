@@ -214,7 +214,7 @@ export const translations: Record<Locale, Dictionary> = {
         },
         {
           index: "03",
-          title: "Offerify — AI Career Tools",
+          title: "Offerify",
           description:
             "Приложение с тремя AI-инструментами для карьерного развития.",
           bullets: [
@@ -377,7 +377,7 @@ export const translations: Record<Locale, Dictionary> = {
         },
         {
           index: "03",
-          title: "Offerify — AI Career Tools",
+          title: "Offerify",
           description:
             "App with three AI-powered career tools.",
           bullets: [
