@@ -216,7 +216,7 @@ export const translations: Record<Locale, Dictionary> = {
           index: "03",
           title: "Offerify",
           description:
-            "Приложение с тремя AI-инструментами для карьерного развития.",
+            "Веб-приложение с AI-инструментами для карьерного развития.",
           bullets: [
             "Генератор сопроводительных писем на базе Claude SDK",
             "ATS-анализатор резюме с поддержкой PDF upload",
@@ -379,7 +379,7 @@ export const translations: Record<Locale, Dictionary> = {
           index: "03",
           title: "Offerify",
           description:
-            "App with three AI-powered career tools.",
+            "Web app with AI-powered career tools.",
           bullets: [
             "Cover letter generator powered by Claude SDK",
             "ATS resume analyzer with PDF upload support",
