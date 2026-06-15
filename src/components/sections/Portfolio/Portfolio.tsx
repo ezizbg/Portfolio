@@ -10,8 +10,8 @@ import './Portfolio.scss';
 const PROJECT_VISUALS: Array<{ accent: string; pattern: 'rings' | 'dots' | 'stack' | 'bars' }> = [
   { accent: '#ff5a4f', pattern: 'rings' },
   { accent: '#6ad6ff', pattern: 'dots' },
-  { accent: '#b6f24c', pattern: 'stack' },
-  { accent: '#c084fc', pattern: 'bars' },
+  { accent: '#7B6FEE', pattern: 'stack' },
+  { accent: '#10B981', pattern: 'bars' },
 ];
 
 function ProjectVisual({ pattern, accent }: { pattern: string; accent: string }) {
